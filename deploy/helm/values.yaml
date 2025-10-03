@@ -1,1 +1,5 @@
-
+name: end-to-end
+image: end-to-end
+replicas: 3
+tag: main
+port: 8080
