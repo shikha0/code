@@ -1,7 +1,7 @@
 FROM python:3.13-slim as base
 LABEL authors="shikha p"
 RUN groupadd --gid 1000 appgroup && \
-    useradd --uid 1000 --gid appgroup --shell /bin/bash --create-home appuser \
+    useradd --uid 1000 --gid appgroup --shell /bin/bash --create-home appuser 
 COPY . /app
 USER appuser
 RUN chown -R appuser:appgroup /app
